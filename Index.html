@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crypto Transaction App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Crypto Transaction App</h1>
+
+    <div id="price-container">
+      <h2>Current Prices (USD)</h2>
+      <ul id="crypto-prices"></ul>
+    </div>
+
+    <div class="transaction-box">
+      <h2>Simulate Transaction</h2>
+      <form id="transaction-form">
+        <input type="text" id="from" placeholder="From (e.g. Alice)" required />
+        <input type="text" id="to" placeholder="To (e.g. Bob)" required />
+        <select id="currency">
+          <option value="bitcoin">Bitcoin</option>
+          <option value="ethereum">Ethereum</option>
+        </select>
+        <input type="number" id="amount" placeholder="Amount" required />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <div id="history">
+      <h2>Transaction History</h2>
+      <ul id="history-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
